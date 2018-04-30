@@ -1,0 +1,97 @@
+﻿@*<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link href="~/Stylesheets/header.css" rel="stylesheet" />
+    <link href="~/Stylesheets/pages.css" rel="stylesheet" />*@
+
+@{ 
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <script>
+
+        function fnLogin() {
+
+
+            if (document.getElementById("email").value=="")
+
+            {
+                $('#lblerror').html("Please enter Email Id");
+                
+                return false;
+            }
+            if (document.getElementById("voterid").value == "") {
+                $('#lblerror').html("Please enter Voter Id");
+
+                return false;
+            }
+            if (document.getElementById("pswd").value == "") {
+                $('#lblerror').html("Password Cannot be blank");
+
+                return false;
+            }
+
+            $.post("Login/Login", { "Email": document.getElementById("email").value, "VoterID": document.getElementById("voterid").value, "Password": document.getElementById("pswd").value }, function (data) {
+                if (data.success) {
+                    window.location.href = data.returnUrl;
+                }
+                else if (!data.success) {
+                    alert(data.errorMessage);
+                }
+            }, "json");
+            return false;
+        }
+
+    </script>
+
+@*</head>*@
+
+@*<body>*@
+    
+
+    <!--Page Title-->
+    <div class="page-title">
+        <h1 class="page-name">LOGIN</h1>
+    </div>
+    <!--End-->
+
+
+
+
+
+
+    <div id="login-form">
+
+
+       
+        <h1 class="page-heading">LOGIN</h1>
+        <p class="page-text">HAVING TROUBLE WHILE LOGIN? CLICK <a href="help.html">HERE</a></p>
+        <div id="form-input">
+                <ol>
+
+                    <br />
+                    <label class="text-danger" id="lblerror"></label>
+                    <br />
+                    <p>
+                        <input type="text" name="userid"  placeholder="Email ID" id="email">
+                    </p>
+                    <br>
+                    <p>
+                        <input type="text" name="userid" placeholder="Unique Voter ID" id="voterid">
+                    </p>
+                    <br>
+                    <p>
+                        <input type="password" name="userpswd" placeholder="Password" id="pswd">
+                    </p>
+                    <br>
+                   
+                    <p><input type="submit" value="Login" id="data-send" onclick="fnLogin();"></p>
+                </ol>
+        </div>
+    </div>
+
+    
+@*</body>
+</html>*@

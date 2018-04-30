@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    @Styles.Render("~/Stylesheets/css")
+    
+</head>
+<body>
+
+    <header>
+        <div id="head">
+            <div id="logo">
+                <img src="~/images/logo.png">
+            </div>
+            <div id="links">
+                <div id="home">
+                    @Html.ActionLink("HOME", "index", "Home")
+                </div>
+                <div id="notices">
+                    @Html.ActionLink("ADMIN", "AdminLogin", "Login")
+                    @*<a href="">NOTICES</a>*@
+                </div>
+                <div id="login">
+                    @Html.ActionLink("LOGIN", "Login", "Login")
+                </div>
+                <div id="results">
+                    @Html.ActionLink("RESULTS", "Results", "Results")
+                </div>
+                <div id="help">
+                    @Html.ActionLink("HELP", "Help", "Home")
+                </div>
+                <div id="about">
+                    @Html.ActionLink("ABOUT","About","Home")
+                </div>
+            </div>
+        </div>
+    </header>
+    <div>
+        @RenderBody()
+        <hr />
+        <!--Footer-->
+        <div id="footer1">
+            <div id="details">
+                <h1 id="last-id">AD'S VOTING SYSTEM</h1>
+                <br>
+                <p>This Voting System is a winter project made by Ankit and Deepak student of IT-1, NSIT under the guidence of Deepak Kumar, Assistant professor at NSIT, IT Department.</p>
+                <hr>
+                <p>ankitmp3@hotmail.com</p>
+                <hr>
+                <p>+91 7503649465</p>
+                <hr>
+                <p>Netaji Subhas Institute Of Technology<br>Azad Hind Fauz Marg, Sector 3, Dwarka, Dwarka Sector-3, Dwarka, New Delhi, Delhi 110078</p>
+            </div>
+        </div>
+        <div id="footer2">
+            <div id="bottom-links">
+                <span id="b_home">
+                    @Html.ActionLink("HOME", "index", "Home",new { @class= "b-link" })
+                    <a href="" class="b-link">HOME</a>
+                </span>
+                <span id="b_notices">
+                    <a href="" class="b-link">NOTICES</a>
+                </span>
+                <span id="b_login">
+                    <a href="" class="b-link">LOGIN</a>
+                </span>
+                <span id="b_results">
+                    <a href="" class="b-link">RESULTS</a>
+                </span>
+                <span id="b_help">
+                    <a href="" class="b-link">HELP</a>
+                </span>
+                <span id="b_about">
+                    <a href="" class="b-link">ABOUT US</a>
+                </span>
+            </div>
+            <div id="copyright">
+                <p>Copyright &copy; 2018 Ankit. All rights reserved.</p>
+            </div>
+        </div>
+        <!--End-->
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,120 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+#slide {
+    width: 100%;
+    height: 800px;
+    background-image: url('../images/slide1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#feature{
+    width: auto;
+    height: 461px;
+    background-image: url(../images/background1.jpg);
+    text-align: center;
+    font-family: Lucida Grande;
+    color: black;
+}
+
+#extra{
+    width: auto;
+    height: 175px;
+    background-color: #4F76BC;
+}
+
+#text{
+    margin: 0px;
+    float: left;
+    padding: 75px 0px 75px 65px;
+    font-size: 25px;
+    color: white;
+    font-family: Lucida Grande;
+}
+
+#learnmore{
+    margin: 0px;
+    float: right;
+    padding: 75px 65px 75px 0px;
+    font-size: 25px;
+    color: white;
+    font-family: Lucida Grande;
+}
+
+#different{
+    margin: 0px;
+    width: auto;
+    height: 705px;
+}
+
+#diff-content{
+    width: 600px;
+    height: 600px;
+    text-align: center;
+    padding: 50px 0px 50px 20px;
+    float: left;
+}
+
+#voting_image{
+    float: right;
+    width: 645px;
+    height: 445px;
+    padding: 120px 20px 130px 0px;
+    float: right;
+}
+
+#achievement{
+    background-image: url(../images/background2.jpg);
+    width: auto;
+    height: 400px;
+}
+
+#team{
+    width: auto;
+    height: 600px;
+}
+
+#team-heading{
+    width: auto;
+    height: 40px;
+    text-align: center;
+    padding: 40px 0px 0px 0px;
+    font-family: Lucida Grande;
+}
+
+#team-content{
+    width: auto;
+    text-align: center;
+    margin: 0px;
+    font-family: Lucida Grande;
+}
+
+#team_image{
+    width: auto;
+    height: 300px;
+    padding: 90px 180px;
+}
+
+#team_image_1{
+    float: left;
+    padding: 40px;
+}
+
+#team_image_2{
+    float: left;
+}
+
+#team_image_3{
+    float: right;
+}
+
+#review{
+    width: auto;
+    height: 500px;
+    background-image: url(../images/review.jpg);
+    opacity: .43;
+}

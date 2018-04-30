@@ -1,0 +1,56 @@
+﻿@{
+    ViewBag.Title = "Help";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="~/Stylesheets/pages.css" rel="stylesheet" />
+
+
+<script>
+    function fnHelp()
+    {
+        var name = document.getElementById("help-name").value;
+        var email = document.getElementById("help-email").value;
+        var issue = document.getElementById("problem").value;
+
+        if(name=="" || email == "" || issue =="")
+            alert("SOME FIELDS ARE EMPTY....PLEASE RE_ENTER")
+        else
+        alert("Issue Reported. We'll try to fix it soon !!!")
+    }
+</script>
+<!--Page Title-->
+<div class="page-title">
+    <h1 class="page-name">HELP</h1>
+</div>
+<!--End-->
+
+<div id="help-form">
+    <h1 class="page-heading">HELP</h1>
+    <p class="page-text">ARE YOU FACING ANY PROBLEM ? DON'T WORRY, WE WILL HAPPY TO HELP YOU.</p>
+    <div id="help-input">
+        <form action="" method="post">
+            <ol>
+                <p class=help-p>
+                    <label>Name: </label>
+                    <input type="text" name="name" id="help-name">
+                </p>
+                <br>
+                <p class=help-p>
+                    <label>Email: </label>
+                    <input type="text" name="userid" id="help-email">
+                </p>
+                <br>
+                <p class=help-p>
+                    <label>Whats Your Issue: </label><br>
+                    <textarea name="issue" rows="9" cols="100" id="problem"></textarea>
+                </p>
+                <br>
+                <p>
+                    <input type="submit" value="SEND" class="help-send" onclick="fnHelp()">
+                    <input type="reset" value="RESET" class="help-reset">
+                </p>
+            </ol>
+        </form>
+    </div>
+</div>

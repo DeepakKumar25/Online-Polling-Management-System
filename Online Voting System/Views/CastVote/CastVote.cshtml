@@ -1,0 +1,74 @@
+﻿@{
+    Layout = "~/Views/Shared/logout_layout.cshtml";
+}
+
+@model List<Online_Voting_System.CandidateDetails>
+
+
+
+
+<script>
+    function fCastVote(e) {
+        var CanidateId = e.target.id;
+
+
+
+        $.post("/CastVote/CastVote",
+            { CandidateID: CanidateId },
+            function (response) {
+                alert(response.Message);
+            }
+        );
+
+        //$.post("CastVote/CastVote", { "CandidateID": CanidateId }, function (data) {
+        //    if (data.Message != "") {
+        //        alert(data.Message);
+        //    }
+        //    else
+        //    {
+        //        alert('VOTED SUCCESSFULLY !!!');
+        //    }
+        //}, JSON);
+        return false;
+    }
+
+
+</script>
+
+<!--Page Title-->
+<div class="page-title">
+    <h1 class="page-name" id="username">WELCOME @ViewBag.VoterName</h1>
+</div>
+<!--End-->
+ 
+<h2>Choose your candidate</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            @*<th scope="col">SL N0</th>*@
+            <th scope="col">Candidate No.</th>
+            <th scope="col">Candidate Name</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+
+
+     
+
+        @foreach (var can in Model)
+        {
+        <tr>
+            @*<th scope="row">1</th>*@
+            <td>@can.CandidateNO</td>
+            <td>@can.CandidateName</td>
+            @*<td>@can.VoteCount</td>*@
+            <td><button id="@can.CandidateID" type="button" class="btn btn-primary" onclick="fCastVote(event);">Vote</button></td>
+        </tr>
+        }
+
+      
+
+    </tbody>
+</table>

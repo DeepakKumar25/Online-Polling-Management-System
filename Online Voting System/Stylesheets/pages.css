@@ -1,0 +1,218 @@
+body{
+    min-width: 1420px;
+}
+
+.page-title{
+    width: 100%;
+    height: 270px;
+    background-image: url(../images/home10-bg-testimonial1.jpg);
+    color: white;
+    font-size: 25px;
+    font-family: Lucida Grande;
+}
+
+.page-name{
+    padding: 95px 0px 0px 80px;
+}
+
+#notice-block{
+    width: auto;
+    height: 700px;
+    background-color: #F8F8F8;
+}
+
+#login-form{
+    width: auto;
+    height: 700px;
+    background-color: #F8F8F8;
+}
+
+.page-heading{
+    margin: 0px 0px 0px 0px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    width: auto;
+    height: 35px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: Lucida Grande;
+}
+
+.page-text{
+    margin: 0px;
+    width: auto;
+    height: 50px;
+    text-align: center;
+    font-size: 15px;
+    font-family: Lucida Grande;
+}
+
+#form-input{
+    margin: 90px 300px 80px 300px;
+    padding: 30px 155px;
+    background-image: url(../images/background1.jpg);
+}
+
+input{
+    margin: 0px;
+}
+
+input#email{
+    width: 400px;
+    height: 37px;
+    background-color: cornsilk;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    font-size: 26px;
+    font-family: Lucida Grande;
+    background-image: url(../images/icon1.png);
+    padding: 4px 4px 4px 37px;
+    background-position: 2px;
+    font-weight: 100;
+}
+
+input#voterid{
+    width: 400px;
+    height: 37px;
+    background-color: cornsilk;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    font-size: 26px;
+    font-family: Lucida Grande;
+    background-image: url(../images/icon2.png);
+    padding: 4px 4px 4px 37px;
+    background-position: 2px;
+    font-weight: 100;
+}
+
+input#userID{
+        width: 400px;
+        height: 37px;
+        background-color: cornsilk;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-repeat: no-repeat;
+        font-size: 26px;
+        font-family: Lucida Grande;
+        background-image: url(../images/icon2.png);
+        padding: 4px 4px 4px 37px;
+        background-position: 2px;
+        font-weight: 100;
+}
+
+input#pswd{
+    width: 400px;
+    height: 37px;
+    background-color: cornsilk;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    font-size: 26px;
+    font-family: Lucida Grande;
+    background-image: url(../images/icon3.png);
+    padding: 4px 4px 4px 37px;
+    background-position: 2px;
+    font-weight: 100;
+}
+
+input#data-send{
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 0px 170px;
+    cursor: pointer;
+}
+
+#help-form{
+    width: auto;
+    height: 920px;
+    background-color: #F8F8F8;
+}
+
+#help-input{
+    margin: 90px 240px 90px 240px;
+    padding: 20px 20px;
+    background-image: url(../images/background3.png);
+    height: 620px;
+}
+
+input#help-name{
+    width: 400px;
+    height: 37px;
+    background-color: cornsilk;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 21px;
+    font-family: Lucida Grande;
+    padding: 4px 4px 4px 4px;
+    font-weight: 100;
+}
+
+input#help-email{
+    width: 400px;
+    height: 37px;
+    background-color: cornsilk;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 21px;
+    font-family: Lucida Grande;
+    padding: 4px 4px 4px 4px;
+    font-weight: 100;
+}
+
+textarea#problem{
+    width: 700px;
+    height: 250px;
+    background-color: cornsilk;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 21px;
+    font-family: Lucida Grande;
+    padding: 4px 4px 4px 4px;
+    font-weight: 100;
+}
+
+label{
+    font-family: Lucida Grande;
+    padding: 0px 4px 10px 4px;
+}
+
+input.help-send{
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 0px 10px 0px 0px;
+    cursor: pointer;
+}
+
+input.help-reset{
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 0px 0px 0px 10px;
+    cursor: pointer;
+}
+
+#result-block{
+    width: auto;
+    height: 700px;
+    background-color: #F8F8F8;
+}
+
+#about-block{
+    width: auto;
+    height: 700px;
+    background-color: #F8F8F8;
+}

@@ -1,0 +1,75 @@
+﻿
+@{ 
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model IEnumerable<Online_Voting_System.CandidateDetails>
+ <!--Page Title-->
+<div class="page-title">
+    <h1 class="page-name">@{ if (ViewBag.Result == 0)
+        {
+
+
+            <label>Result Awaited........</label> 
+        }
+        else
+        {
+            <label>@ViewBag.Winner Has Won...</label>
+        }
+
+
+
+
+
+
+    }</h1>
+</div>
+<!--End-->
+
+
+
+
+
+
+
+@if (ViewBag.Result == 1)
+{
+
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">
+                Candidate No
+            </th>
+            <th scope="col">
+                Candidate Name
+            </th>
+
+
+            <th scope="col">
+                No of Votes
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    @foreach (var item in Model)
+    {
+
+            <tr>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.CandidateNO)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CandidateName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.VoteCount)
+                </td>
+
+            </tr>
+    }
+
+</table>
+    }

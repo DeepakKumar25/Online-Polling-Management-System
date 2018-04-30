@@ -1,0 +1,33 @@
+﻿@{
+    Layout = "~/Views/Shared/logout_layout.cshtml";
+}
+
+
+<script>
+    function fnSaveResult() {
+        
+        $.post("/Admin/DeclareResult", { "ResultId": document.getElementById('votingOpen').checked == true ? 0 : 1}, function(data) {
+            if (data.success) {
+                alert('SAVED SUCCESSFULLY !!!')
+                window.location.href = data.returnUrl;
+            } else {
+                alert("error Occured");
+            }
+           
+        }, "json");
+        return false;
+    }
+
+
+
+</script>
+<div>
+
+    Voting Open:  <input type="radio" id="votingOpen" @(ViewBag.Lock == 0 ?  "checked " : "") name="voting" value="0"/><br>
+    Lock Result: <input type="radio" id="votingClose" name="voting" value="1"  @(ViewBag.Lock == 1 ?  "checked " : "") /><br>
+
+    
+    <input type="button" value="Save" class="btn btn-default" onclick="fnSaveResult();" />
+    
+
+</div>

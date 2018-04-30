@@ -1,0 +1,218 @@
+body{
+    min-width: 1420px;
+}
+
+header{
+    box-sizing: content-box;
+    font-family: Lucida Grande;
+    font-size: 20px;
+    font-weight: bold;
+    color: #6988C4;
+    background: white;
+    margin: auto;
+    height: 80px;
+    width: auto;
+    padding: 30px;
+}
+
+#logo{
+    float: left;
+    height: 35px;
+    align-content: center;
+    padding: 25px 0px 25px 90px;
+}
+
+#links {
+    /*width: 660px;*/
+    width:710px;
+    height: 35px;
+    float: right;
+    padding: 25px;
+    background-color: white;
+}
+
+#home{
+    height: 30px;
+    width: 110px;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+}
+
+#notices{
+    height: 30px;
+    width: 110px;
+    float: left;
+    text-align: center;
+}
+
+#login{
+    height: 30px;
+    width: 110px;
+    float: left;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: #4F76BC;
+}
+
+#results{
+    height: 30px;
+    width: 110px;
+    float: left;
+    text-align: center;
+}
+
+#help{
+    height: 30px;
+    width: 110px;
+    float: left;
+    text-align: center;
+}
+
+#about{
+    height: 30px;
+    width: 110px;
+    float: left;
+    text-align: center;
+}
+
+#footer1{
+    margin: 0px;
+    width: auto;
+    height: 600px;
+    background-color: #2D2D2D;
+}
+
+#footer2{
+    margin: 0px;
+    width: auto;
+    height: 60px;
+    background-color: #373737;
+}
+
+#details{
+    width: 295px;
+    height: 400px;
+    color: #A4A5A9;
+    font-family: Lucida Grande;
+    padding: 90px 0px 0px 100px;
+    font-size: 13px;
+}
+
+hr{
+    color: #373737;
+}
+
+#last-id{
+    color: white;
+    font-family: Lucida Grande;
+    font-size: 25px;
+}
+
+#project{
+    color: #A4A5A9;
+    font-family: Lucida Grande;
+    font-size: 13px;
+    padding: 22px 0px 0px 0px;
+}
+
+#email{
+    color: #A4A5A9;
+    font-family: Lucida Grande;
+    font-size: 13px;
+}
+
+#number{
+    color: #A4A5A9;
+    font-family: Lucida Grande;
+    font-size: 13px;
+}
+
+#address{
+    color: #A4A5A9;
+    font-family: Lucida Grande;
+    font-size: 13px;
+}
+
+#bottom-links{
+    padding: 20px 0px 20px 40px;
+    float: left;
+}
+
+#b_home{
+    width: auto;
+    height: 20px;
+    font-size: 15px;
+    font-family: Lucida Grande;
+    text-align: center;
+    padding: 5px;
+    color: #A4A5A9;
+}
+
+#b_notices{
+    width: auto;
+    height: 20px;
+    font-size: 15px;
+    font-family: Lucida Grande;
+    text-align: center;
+    padding: 5px;
+    color: #A4A5A9;
+}
+
+#b_login{
+    width: auto;
+    height: 20px;
+    font-size: 15px;
+    font-family: Lucida Grande;
+    text-align: center;
+    padding: 5px;
+    color: #A4A5A9;
+}
+
+#b_results{
+    width: auto;
+    height: 20px;
+    font-size: 15px;
+    font-family: Lucida Grande;
+    text-align: center;
+    padding: 5px;
+    color: #A4A5A9;
+}
+
+#b_help{
+    width: auto;
+    height: 20px;
+    font-size: 15px;
+    font-family: Lucida Grande;
+    text-align: center;
+    padding: 5px;
+    color: #A4A5A9;
+}
+
+#b_about{
+    width: auto;
+    height: 20px;
+    font-size: 15px;
+    font-family: Lucida Grande;
+    text-align: center;
+    padding: 5px;
+    color: #A4A5A9;
+}
+
+a.b-link{
+    color: #A4A5A9;
+}
+
+#copyright{
+    float: right;
+    width: auto;
+    height: 20px;
+    font-size: 15px;
+    font-family: Lucida Grande;
+    text-align: center;
+    padding: 5px;
+    color: #A4A5A9;
+}
